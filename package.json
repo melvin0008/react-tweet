@@ -1,0 +1,25 @@
+{
+  "name": "react-tweets",
+  "version": "1.0.0",
+  "description": "Learning react creaing a twitter clone",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melvin0008/react-tweets.git"
+  },
+  "keywords": [
+    "Node",
+    "React",
+    "TwiiterClone"
+  ],
+  "author": "Melvin Philips <me@melvinphilips.com> (http://melvinphilips.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/melvin0008/react-tweets/issues"
+  },
+  "homepage": "https://github.com/melvin0008/react-tweets#readme"
+}
