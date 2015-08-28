@@ -2,10 +2,12 @@
   "name": "react-tweets",
   "version": "1.0.0",
   "description": "Learning react creaing a twitter clone",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "watch": "watchify app.js -o public/js/bundle.js -v",
+    "browserify": "browserify app.js | uglifyjs > public/js/bundle.js",
+    "build": "npm run browserify ",
+    "start": "npm install"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,26 @@
   "bugs": {
     "url": "https://github.com/melvin0008/react-tweets/issues"
   },
-  "homepage": "https://github.com/melvin0008/react-tweets#readme"
+  "homepage": "https://github.com/melvin0008/react-tweets#readme",
+  "devDependencies": {
+    "browserify": "^11.0.1",
+    "nodemon": "^1.4.1",
+    "reactify": "^1.1.1",
+    "uglify-js": "^2.4.24",
+    "watchify": "^3.3.1"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "mongoose": "^4.1.3",
+    "node-jsx": "^0.13.3",
+    "react": "^0.13.3",
+    "socket.io": "^1.3.6",
+    "twitter": "^1.2.5"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
 }
